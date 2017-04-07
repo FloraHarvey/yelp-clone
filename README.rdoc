@@ -1,34 +1,16 @@
-== README
+## Task
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Build a clone of Yelp. The app should allow users to create and review restaurants.
 
-Things you may want to cover:
+## How to Use
+- Visit our app on heroku: https://rafa-yelp.herokuapp.com/restaurants
+To view tests:
+- Clone this repo
+- Install Bundler and gems
+- Run rSpec in Command Line
 
-* Ruby version
+## User Stories
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-User Stories
-============
 ```
 As a user,
 So I can read about a restaurant
@@ -48,7 +30,7 @@ I want to be able to edit a restaurant entry
 
 As a user,
 So I can see how good a restaurant is
-I want to see average restaurant scores
+I want to see average restaurant ratings
 
 As a restaurant reviewer,
 So that I can review a restaurant
@@ -71,8 +53,8 @@ For privacy
 I want to be able to sign out of my account
 
 As a user
-So that I can find buttons easier
-I want to have a nav-bar
+So that I can find buttons more easily
+I want to have a nav-bar at the top of the page
 
 As a user
 So that I know who's posted what
@@ -81,4 +63,39 @@ I want user email address displayed with review
 As a site owner
 To keep reviews unbiased
 I want a user to not be able to review their own restaurant
+
+As a user
+So I can sign in more easily
+I would like the option to sign in with Facebook
+
+As a user
+So I know where a restaurant is
+I would like to view its location on a map
+
+As a user
+To enhance my experience
+I would like to see an image of each restaurant
 ```
+
+## Version 1: MVP
+- Visitors can create new restaurants using a form, specifying a name and description
+- Restaurants can be edited and deleted
+- Visitors can leave reviews for restaurants, providing a numerical score (1-5) and a comment about their experience
+- The restaurants listings page should display all the reviews, along with the average rating of each restaurant
+
+## Version 2:
+- Users can register/login
+- Sign in/out/up buttons displayed at top of page depending on whether user is signed in
+- The email address of the reviewer should be displayed as part of the review
+- Validations should be in place for the restaurant and review forms - restaurants must be given a name and rating, reviews must be given a rating from 1-5 (comment is optional)
+
+## Version 3:
+- Add option to sign in with Facebook
+- Add option to upload an image when creating a restaurant
+- Display location of restaurant on map
+
+## Technologies used
+- Ruby, RAILS, HTML
+- Tested with rSpec, Capybara, Shoulda
+- OmniAuth, Devise, Google Maps API, Geocoder, Paperclip, Cloudinary, Heroku
+- Workflow planning with Trello
